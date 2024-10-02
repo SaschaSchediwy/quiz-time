@@ -1,0 +1,40 @@
+#Introduction
+user_name = input("Enter your name: ")
+print(user_name+ ", welcome to my Big Brain Python Quiz!")
+print("")
+score = 0
+
+#Question 1
+answer_1 = input("Q1/3: What is the best programming language; 'Python' or 'C++'? ")
+right_answer = "Python"
+got_it_right = right_answer == answer_1
+print(user_name+ ", that is " + str(got_it_right)+ ", the best programming language is " + str(right_answer) +".")
+print("")
+score = score + int(got_it_right)
+
+#Question 2
+answer_2 = input("Q2/3: Can you trust the snake; 'yes' or 'no'? ")
+right_answer = "no"
+got_it_right = right_answer == answer_2
+print(user_name+ ", that is " + str(got_it_right)+ ", you cannot trust the snake.")
+print("")
+score = score + int(got_it_right)
+
+#Question 3
+answer_3 = input("Q3/3: What is your favourite colour? ")
+right_answer = answer_3
+got_it_right = right_answer == answer_3
+print(user_name+ ", wow, that's right! Your favourite colour really is "+ str(right_answer) + "!!")
+print("")
+score = score + int(got_it_right)
+
+#Ending
+print("Your score is " + str(score))
+if score==3:
+    print("Well done!")
+if score==2:
+    print("Not bad... I guess.")
+if score==1:
+    print("Better luck next time.")
+if score==0:
+    print ("Wow, you really suck!")
